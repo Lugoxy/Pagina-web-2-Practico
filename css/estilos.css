@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+/*Reseteo = normalize*/
+*{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+body{
+    font-family: "Figtree",sans-serif; /*tipografia*/
+    color: #0B1E46; /* Color de tipografia*/
+}
+
+header{
+    background-color: #5B86E5;
+}
+  header div{
+      width: 1100px;
+      height: 104px;
+      margin: auto;  /* centrar horizontalmente el elemento dentro de su contenedor*/ 
+
+      display: flex;
+      justify-content: space-between;  /*distribuye elementos a los extremos*/
+      align-items: center;             /*Alinear los elementos verticalmente en el medio*/
+  }
+
+    header div nav a{ 
+       margin: 8px;       /* separacion */
+       color: #fff;  
+       font-size: 20px;  /* tamaño de letra*/
+       text-decoration: none;    /* quitar subrayado*/ 
+               
+                  }
+
+/* main */
+main{
+   min-height: 600px; 
+}
+
+/* hero-banner */
+#hero-banner{
+    /*
+    * Created with https://www.css-gradient.com
+    * Gradient link: https://www.css-gradient.com/?c1=5b86e5&c2=37d2dc&gt=l&gd=dtt
+    */
+        background: #5B86E5;
+        background: linear-gradient(180deg, #5B86E5, #37D2DC);
+    }
+     
+    #hero-banner div{
+        width: 1100px;
+        height: 680px;
+        margin: auto;
+           display: flex;
+        align-items: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #hero-banner div article{
+        width: 478px;
+        color: #fff;
+    }
+    
+    #hero-banner div article h1{
+        font-size: 24px;
+        font-weight: normal;
+        margin-bottom: 40px;
+    }
+    #hero-banner div article h2{
+        font-size: 40px;
+    }
+
+    /* sección servicios */            
+#servicios{
+    width: 1100px;
+    height: 414px;
+    margin: auto;
+    margin-top: 72px;
+    padding: 32px 24px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+    #servicios span{
+        font-size: 24px;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    #servicios article{
+        width: 336px;
+        height: 289px;
+        padding: 24px 28px;
+        margin-top: 32px;
+        border: 2px solid #07B2FF;
+        border-radius: 8px;
+        color: #07B2FF;
+    }
+        #servicios article h2{
+            font-weight: 300;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+        #servicios article a{
+            display: block;
+            margin-top: 8px;
+            text-decoration: none;
+            color: #07B2FF;
+        }
+
+/* sección portfolio */
+    #portfolio{
+        width: 1100px;
+        height: 837px;
+        margin: 72px auto 0px auto;
+        padding: 32px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+        #portfolio h3{
+            width: 100%;
+            text-align: center;
+            font-weight: 400;
+            font-size: 24px;
+        }
+
+        #portfolio article{
+            width: 340px;
+            height: 340px;
+            margin-top: 32px;
+            border-radius: 8px;
+        }
+        #portfolio-1{
+            background-image: url(../imgs/portfolio-1.png);
+        }
+        #portfolio-2{
+            background-image: url(../imgs/portfolio-2.png);
+        }
+        #portfolio-3{
+            background-image: url(../imgs/portfolio-3.png);
+        }
+        #portfolio-4{
+            background-image: url(../imgs/portfolio-4.png);
+        }
+        #portfolio-5{
+            background-image: url(../imgs/portfolio-5.png);
+        }
+        #portfolio-6{
+            background-image: url(../imgs/portfolio-6.png);
+        }
+        
+        #portfolio article a{
+            display: block;
+            width: 288px;
+            padding: 8px 16px;
+            margin: 252px auto 0 auto;
+            border-right: 32px solid #07B2FF;
+            border-radius: 8px;
+            background-color: #fff;
+            text-decoration: none;
+        }
+            #portfolio a h2{
+                color: #07B2FF;
+                font-size: 16px;
+                font-weight: 400;
+            }
+            #portfolio a span{
+                display: block;
+                margin-top: 8px;
+                font-size: 24px;
+                font-weight: 600;
+                color: #0B1E46;
+            }
+
+/* sección contacto */        
+    form{
+        width: 648px;
+        margin: 72px auto 0 auto;
+        padding: 44px 84px;
+        background-color: #CCEFFF;
+        border-radius: 16px;
+    }
+        form input, 
+        form textarea
+        {
+            width: 100%;
+            margin-bottom: 32px;
+            padding: 11px 16px;
+            border-radius: 8px;
+            border: none;
+            border-left: 12px solid #07B2FF;
+
+            box-shadow: 0px 4px 4px hsla(0, 0%, 55%, .25);
+
+            font-family: Figtree, sans-serif;
+            font-size: 16px;
+            color: #0B1E46;
+        }
+        form input::placeholder,
+        form textarea::placeholder
+        {
+            font-family: Figtree, sans-serif;
+            font-size: 16px;
+            color: #0B1E46;
+        }
+        form textarea{
+            height: 160px;
+            resize: none;
+        }
+
+        form button{
+            width: 160px;
+            padding: 11px;
+            border: none;
+            background-color: #07B2FF;
+            border-radius: 8px;
+            box-shadow: 0px 4px 4px hsla(0, 0%, 55%, .25);
+            font-family: Figtree, sans-serif;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        #direccion{
+            width: 648px;
+            height: 200px;
+            margin: 72px auto 0 auto;
+            background-color: #F5FCFF;
+            border-bottom: 8px solid #07B2FF;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+            #direccion article{
+                width: 142px;
+
+            }
+
+/* footer */        
+footer{
+    background-color: #0B1E46;
+    margin-top: 72px;
+}
+    footer div{
+        width: 1100px;
+        height: 216px;
+        margin: auto;  
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+        footer div nav a{
+            margin: 16px;
+        }
